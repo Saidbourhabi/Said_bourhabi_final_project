@@ -12668,6 +12668,9 @@ footer .footer-content .row-links a {
   border: 2px solid #000;
   border-radius: 50%;
 }
+footer .footer-content .row-links a:hover {
+  background: #ff9d00;
+}
 
 @media (max-width: 428px) {
   footer {
