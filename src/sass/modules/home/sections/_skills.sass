@@ -1,8 +1,8 @@
 #Skills
     width: 100%
     height: 50vh
-    background: #ffa600
     .skills-content
+        background: #ffa600
         padding-inline: 2rem
         width: 100%
         height: 100%
@@ -27,3 +27,18 @@
                 flex-direction: column
                 align-items: flex-end
                 justify-content: center
+
+@media (max-width: 428px) 
+    #Skills
+        width: 100%
+        height: 120vh
+        .skills-content
+            width: 100%
+            height: fit-content
+            padding: 2rem 
+            display: flex
+            flex-direction: column
+            align-items: center
+            justify-content: center
+            .skill-item
+                display: flex

@@ -5,7 +5,6 @@
         padding: 2rem 0
         width: 100%
         height: 100%
-        background: #e8e8e8
         display: flex
         flex-direction: column
         align-items: center
@@ -29,8 +28,11 @@
             gap: 2rem
             padding-inline: 2rem
             .left
-                .img-port
-                    border: 3px solid #000
+                width: 100%
+                height: 100%
+                img
+                    width: 600px
+                    border: 3px solid #ff9d00
                     border-radius: 25px
             .right
                 width: 100%
@@ -50,7 +52,7 @@
                     padding: 1rem 
                     width: 100% 
                     height: fit-content
-                    background: #fff
+                    background: #ff9d00
                     box-shadow: 1px 1px 6px #00000049
                     border-radius: 25px
                     display: flex
@@ -77,4 +79,50 @@
                         display: flex
                         flex-direction: column
                         gap: 0.5rem
+                    .left-info
 
+@media (max-width: 428px) 
+    #About
+        width: 100%
+        .about-content
+            width: 100%
+            display: flex
+            flex-direction: column
+            align-items: center
+            justify-content: center
+            .about
+                display: flex
+                flex-direction: column
+                align-items: center
+                justify-content: center
+                padding-inline: 0
+                .left
+                    width: 100%
+                    display: flex
+                    align-items: center
+                    justify-content: center
+                    img
+                        width: 350px
+                .right
+                    padding-inline: 1rem
+                    width: 100%
+                    display: flex
+                    align-items: center
+                    justify-content: center
+                    .up-info
+                        display: flex
+                        align-items: center
+                        justify-content: center
+                        padding-inline: 1rem
+                    .middle-info
+                        padding: 1rem 
+                        width: 100% 
+                        height: fit-content
+                        background: #ff9d00
+                        box-shadow: 1px 1px 6px #00000049
+                        border-radius: 25px
+                        display: flex
+                        flex-direction: row
+                        align-items: center
+                        justify-content: center
+                        gap: 3rem

@@ -1,7 +1,6 @@
 body
     width: 100%
     .navbar
-        // width: fit-content
         margin: auto
         border-radius: 50px
         position: fixed
@@ -13,16 +12,38 @@ body
         transform: translateX(-50%)
         top: 2rem
         border: solid 2px #ff9d00
+        box-shadow: 1px 1px 7px 1px #ff9d00a1
+        z-index: 10000
         .navbar-brand
             font-size: x-large
             font-weight: bolder
+            transition: 0.3s ease
+        .navbar-brand:hover
+            color: #ff9d00
+        .nav-link
+            text-decoration: none
+            font-weight: bold
+            color: #ff9d00
+            position: relative
+            transition: color 0.3s ease
+        .nav-link::after
+            content: ''
+            position: absolute
+            width: 0
+            height: 2px
+            background: #000
+            bottom: 0
+            left: 50%
+            transition: all 0.5s ease
+        .nav-link:hover::after
+            width: 100%
+            left: 0
+        .nav-link:hover
+            color: #000
 
-
-
-@media (max-width:480px) 
-    body
-        width: 100%
-        .navbar
+@media (max-width:428px)
+    .navbar
+        text-align: center
         gap: 5rem
         margin: auto
         border-radius: 50px
@@ -33,6 +54,5 @@ body
         width: 100%
         left: 50%
         transform: translateX(-50%)
-        top: 2rem
-
-
+        top: 0.1rem
+        z-index: 1000
