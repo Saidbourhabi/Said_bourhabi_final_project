@@ -11933,6 +11933,7 @@ body .navbar .nav-link:hover {
   gap: 1rem;
 }
 #hero .hero-content .secend-item .buttons {
+  width: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -11944,6 +11945,14 @@ body .navbar .nav-link:hover {
   background: #ff9d00;
   border-radius: 50px;
   color: #fff;
+  padding: 0.8rem 1rem;
+}
+#hero .hero-content .secend-item .buttons .hero-links-2 {
+  text-decoration: none;
+  background: #fff;
+  border-radius: 50px;
+  color: #ff9d00;
+  border: 2px solid #ff9d00;
   padding: 0.8rem 1rem;
 }
 #hero .hero-content .third-item {
@@ -12726,6 +12735,10 @@ footer .footer-content .row-links a {
     width: 100%;
   }
 }
+.tittle-test {
+  padding-inline: 2rem;
+}
+
 .nonemobile {
   display: none;
 }
